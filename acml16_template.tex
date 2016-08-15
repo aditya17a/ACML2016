@@ -1,0 +1,96 @@
+%\documentclass[wcp,gray]{jmlr} % test grayscale version
+\documentclass[wcp]{jmlr}
+
+% The following packages will be automatically loaded:
+% amsmath, amssymb, natbib, graphicx, url, algorithm2e
+
+%\usepackage{rotating}% for sideways figures and tables
+%\usepackage{longtable}% for long tables
+\usepackage{hyperref}
+\usepackage[section]{placeins}
+%\usepackage{url}
+\usepackage{physics}
+%\usepackage{amsmath}
+\usepackage{graphicx,import}
+%\usepackage[norelsize]{algorithm2e}
+% The booktabs package is used by this sample document
+% (it provides \toprule, \midrule and \bottomrule).
+% Remove the next line if you don't require it.
+%\usepackage{booktabs}
+% The siunitx package is used by this sample document
+% to align numbers in a column by their decimal point.
+% Remove the next line if you don't require it.
+%\usepackage[load-configurations=version-1]{siunitx} % newer version
+%\usepackage{siunitx}
+%\usepackage{natbib}
+
+% The following command is just for this sample document:
+%\newcommand{\cs}[1]{\texttt{\char`\\#1}}
+
+\jmlrvolume{60}
+\jmlryear{2016}
+\jmlrworkshop{ACML 2016}
+
+\title[The Incredible Shrinking Neural Network]{The Incredible Shrinking Neural Network: Pruning to Operate in Constrained Memory Environments}
+
+
+ % Authors with different addresses:
+%  \author{\Name{Nikolas Wolfe} \Email{nwolfe@cs.cmu.edu}\\
+%  \Name{Aditya Sharma} \Email{adityasharma@cmu.edu}\\
+%  \Name{Bhiksha Raj} \Email{bhiksha@cs.cmu.edu}\\
+%  \addr Carnegie Mellon University
+% }
+
+%\editors{List of editors' names}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+\newcommand{\Out}[2]{o_{#1}^{(#2)}}
+\newcommand{\Target}[1]{t_{#1}}
+\newcommand{\Input}[2]{x_{#1}^{(#2)}}
+\newcommand{\Weight}[3]{w_{#1#2}^{(#3)}}
+\newcommand{\Con}[3]{c_{#1#2}^{(#3)}}
+\newcommand{\Etotal}{E_{\mathrm{total}}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\maketitle
+
+\input{abstract.tex}
+\begin{keywords}
+pruning, neural network compression, pruning neurons, learning representation
+\end{keywords}
+
+\input{introduction.tex}
+\input{literature_review.tex}
+\input{methodology.tex}
+%\input{experiments.tex}
+\input{results.tex}
+%\input{discussion.tex}
+\input{conclusions.tex}
+%\input{acknowledgments.tex}
+
+
+
+%\acks{We would like to thank Lukas Drude for the assistance with calculations on collecting quadratic error gradients through the 2nd order version of back-propagation. We would also like to thank Rita Singh, Abelino Jiminez, Thomas Schaaf and Don Wolfe for helpful discussions.}
+
+%\bibliographystyle{plain}
+\bibliography{acml16}
+
+%\appendix
+
+%\section{First Appendix}\label{apd:first}
+
+%\input{first_second_derivatives.tex}
+
+%\input{first_second_derivatives.tex}
+%\input{diagram.tex}
+
+%\section{Second Appendix}\label{apd:second}
+
+%This is the second appendix.
+
+
+\end{document}

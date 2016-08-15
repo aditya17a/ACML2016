@@ -1,0 +1,47 @@
+\documentclass[wcp]{jmlr}
+\usepackage{hyperref}
+\usepackage[section]{placeins}
+\usepackage{physics}
+\usepackage{graphicx,import}
+
+\jmlrvolume{60}
+\jmlryear{2016}
+\jmlrworkshop{ACML 2016}
+
+\title[The Incredible Shrinking Neural Network]{The Incredible Shrinking Neural Network: Pruning to Operate in Constrained Memory Environments}
+
+% Authors with different addresses:
+%  \author{\Name{Nikolas Wolfe} \Email{nwolfe@cs.cmu.edu}\\
+%  \Name{Aditya Sharma} \Email{adityasharma@cmu.edu}\\
+%  \Name{Bhiksha Raj} \Email{bhiksha@cs.cmu.edu}\\
+%  \addr Carnegie Mellon University
+% }
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+\newcommand{\Out}[2]{o_{#1}^{(#2)}}
+\newcommand{\Target}[1]{t_{#1}}
+\newcommand{\Input}[2]{x_{#1}^{(#2)}}
+\newcommand{\Weight}[3]{w_{#1#2}^{(#3)}}
+\newcommand{\Con}[3]{c_{#1#2}^{(#3)}}
+\newcommand{\Etotal}{E_{\mathrm{total}}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\maketitle
+
+\appendix
+
+\section{Second Derivative Back-Propagation}\label{apd:first}
+\input{diagram.tex}
+\input{first_second_derivatives.tex}
+
+
+%\section{Second Appendix}\label{apd:second}
+
+%This is the second appendix.
+
+
+\end{document}
