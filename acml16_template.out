@@ -1,12 +1,12 @@
 \BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.0.2}{Methodology}{}% 2
+\BOOKMARK [1][-]{section.0.2}{Pruning Neurons to Shrink Neural Networks}{}% 2
 \BOOKMARK [2][-]{subsection.0.2.1}{Brute Force Removal Approach}{section.0.2}% 3
 \BOOKMARK [2][-]{subsection.0.2.2}{Taylor Series Representation of Error}{section.0.2}% 4
-\BOOKMARK [2][-]{subsection.0.2.3}{Linear Approximation Approach}{section.0.2}% 5
-\BOOKMARK [2][-]{subsection.0.2.4}{Quadratic Approximation Approach}{section.0.2}% 6
-\BOOKMARK [2][-]{subsection.0.2.5}{Proposed Pruning Algorithm}{section.0.2}% 7
-\BOOKMARK [3][-]{subsubsection.0.2.5.1}{Algorithm I: Single Overall Ranking}{subsection.0.2.5}% 8
-\BOOKMARK [3][-]{subsubsection.0.2.5.2}{Algorithm II: Iterative Re-Ranking}{subsection.0.2.5}% 9
+\BOOKMARK [3][-]{subsubsection.0.2.2.1}{Linear Approximation Approach}{subsection.0.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.0.2.2.2}{Quadratic Approximation Approach}{subsection.0.2.2}% 6
+\BOOKMARK [2][-]{subsection.0.2.3}{Proposed Pruning Algorithm}{section.0.2}% 7
+\BOOKMARK [3][-]{subsubsection.0.2.3.1}{Algorithm I: Single Overall Ranking}{subsection.0.2.3}% 8
+\BOOKMARK [3][-]{subsubsection.0.2.3.2}{Algorithm II: Iterative Re-Ranking}{subsection.0.2.3}% 9
 \BOOKMARK [1][-]{section.0.3}{Experimental Results}{}% 10
 \BOOKMARK [2][-]{subsection.0.3.1}{Pruning a 1-Layer Network}{section.0.3}% 11
 \BOOKMARK [3][-]{subsubsection.0.3.1.1}{Single Overall Ranking Algorithm}{subsection.0.3.1}% 12
@@ -16,4 +16,5 @@
 \BOOKMARK [3][-]{subsubsection.0.3.2.1}{Single Overall Ranking Algorithm}{subsection.0.3.2}% 16
 \BOOKMARK [3][-]{subsubsection.0.3.2.2}{Iterative Re-Ranking Algorithm}{subsection.0.3.2}% 17
 \BOOKMARK [3][-]{subsubsection.0.3.2.3}{Visualization of Error Surface \046 Pruning Decisions}{subsection.0.3.2}% 18
-\BOOKMARK [1][-]{section.0.4}{Conclusions \046 Future Work}{}% 19
+\BOOKMARK [2][-]{subsection.0.3.3}{Experiments on Toy Datasets}{section.0.3}% 19
+\BOOKMARK [1][-]{section.0.4}{Conclusions \046 Future Work}{}% 20

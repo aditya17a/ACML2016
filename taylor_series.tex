@@ -6,13 +6,13 @@ Let us denote the total error from the optimally trained neural network for any 
 \end{align}
 
 
-When a neuron is pruned, its output $O$ becomes 0. From equation \ref{eq:ts1}, the contribution $E(0)$ of this neuron, then becomes:
+When a neuron is pruned, its output $O$ becomes 0. %From equation \ref{eq:ts1}, the contribution $E(0)$ of this neuron, then becomes:
 
-\begin{align}
-\hat E(0) \approx E(O_k) - O_k\cdot \left.\pdv{E}{O}\right|_{O_k} +  0.5\cdot O_k^2\cdot \left.\pdv[2]{E}{O}\right|_{O_k}\label{eq:ts2}
-\end{align}
+%\begin{align}
+%\hat E(0) \approx E(O_k) - O_k\cdot \left.\pdv{E}{O}\right|_{O_k} +  0.5\cdot O_k^2\cdot \left.\pdv[2]{E}{O}\right|_{O_k}\label{eq:ts2}
+%\end{align}
 
-Replacing $O$ by $O_k$ in equation \ref{eq:ts1} shows us that the error is approximated perfectly by equation \ref{eq:ts1} at $O_k$. Using this and equation \ref{eq:ts2} we get:
+Replacing $O$ by $O_k$ in equation \ref{eq:ts1} shows us that the error is approximated perfectly by equation \ref{eq:ts1} at $O_k$. So:%Using this and equation \ref{eq:ts2} we get:
 
 \begin{align}
 \Delta E_k = \hat E(0) - \hat E(O_k)= - O_k\cdot \left.\pdv{E}{O}\right|_{O_k} + 0.5\cdot O_k^2\cdot \left.\pdv[2]{E}{O}\right|_{O_k}\label{eq:ts3},
